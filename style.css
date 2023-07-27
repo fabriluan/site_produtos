@@ -8,7 +8,7 @@ body, html { font-family: 'Montserrat', sans-serif; }
 
 /* Principal */
 section.principal {
-    background: linear-gradient(90deg, rgba(54,150,147,1) 0%, rgba(100,200,200,1) 58%, rgba(16,222,222,1) 100%);
+    background: linear-gradient(90deg, rgba(54,150,147,1) 0%,  rgb(31, 204, 204) 100%);
 	padding: 50px 0 0 0;
 }
 section.principal h1 {
@@ -463,24 +463,41 @@ a.cta.cta-comprafacil {
 
 /* Garantia */
 section.garantia {
-    /* background: #ffffff url(img/bg-top.webp) 0 150px no-repeat; */
+    position: relative;
     background: linear-gradient(90deg, rgba(54,150,147,1) 0%, rgba(100,200,200,1) 80%, rgb(30, 202, 202) 100%);
-    padding: 0 0 25px 0;
+    padding:  120px 0;
+    margin-top: 170px;
 }
+section.garantia img{
+    position: absolute;
+    top: -150px;
+    left: 5%;
+    width: 100%;
+    max-width: 590px;
+}
+
 section.garantia h1 {
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 38px;
-    margin: 235px auto 25px auto;
+    font-size: 2.7rem;
+    /* margin: 235px auto 25px auto; */
+    margin: 0 auto 25px auto;
     font-weight: 600;
 	color: #ffffff;
 }
-section.garantia h1 span {
+section.garantia span h1{
     font-weight: 900;
 }
 section.garantia p {
+    width: 100%;
+    font-size: 1.1rem;
 	color: #ffffff;
 	text-align: center;
+}
+
+section.garantia p b{
+    font-size: 1.2rem;
 }
 /* Garantia */
 
