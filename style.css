@@ -364,6 +364,17 @@ img.depo1, img.depo2, img.depo3 {
 }
 /* Depoimentos */
 
+div.video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.video embed{
+    margin: 10px;
+}
+
 /* Oferta */
 section.oferta {
     background:#1D98AE;
@@ -429,6 +440,12 @@ a.cta-ckt {
 /* Oferta */
 
 /* Comprar pela Internet */
+
+.compra{
+    width: 100% !important;
+    margin-top: 400px;
+    max-width: 200px;
+}
 section.comprarinternet {
     background: #ffffff;
 	padding: 50px 0 0 0;
@@ -456,7 +473,8 @@ img.comocomprar {
     margin: 50px auto 0 auto;
 }
 a.cta.cta-comprafacil {
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     margin: 20px auto 20px auto;
 }
 /* Comprar pela Internet */
@@ -804,18 +822,21 @@ img.boleto-icon-obg {
 		font-size: 30px;
     	margin: 25px auto 30px auto;
 	}
-	section.garantia {
-		padding: 0 0 35px 0;
-	}
-	img.garantia {
-		width: 300px;
-		clear: both;
-		display: block;
-		margin: auto;
-	}
+
+    section.garantia{
+        padding-bottom: 50px;
+    }
+
+    section.garantia img{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        left: 0%;
+    }
+    
 	section.garantia h1 {
 		font-size: 30px;
-    	margin: 25px auto 25px auto;
+    	margin: 100px auto 5px auto;
 	}
 	img.atendimentowpp {
     	width: 180px;
@@ -831,5 +852,9 @@ img.boleto-icon-obg {
 	img.pagamento-icon, img.site-seguro {
 		margin: 0 auto 25px auto;
 	}
+    div.video embed{
+        width: 100%;
+        margin: 0px;
+    }
 }
 /* Responsivo */
